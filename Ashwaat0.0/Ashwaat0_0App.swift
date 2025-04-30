@@ -25,7 +25,7 @@ struct Ashwaat0_0App: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            AccessLocation()
         }
         .modelContainer(sharedModelContainer)
     }

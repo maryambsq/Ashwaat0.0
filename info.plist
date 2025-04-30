@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<!--
-   info.plist
-   Ashwaat0.0
-
-   Created by Maryam Amer Bin Siddique on 02/11/1446 AH.
-   Copyright (c) 1446 AH ___ORGANIZATIONNAME___. All rights reserved.
--->
 <plist version="1.0">
-<dict/>
+<dict>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Ashwaat needs your location to track your progress accurately.</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Ashwaat needs your location to track your progress accurately.</string>
+</dict>
 </plist>
