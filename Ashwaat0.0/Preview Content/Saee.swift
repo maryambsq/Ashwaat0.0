@@ -82,7 +82,7 @@ struct Saee: View {
             // الزر أو التايمر
             if isTrackingPaused {
            
-            Button("أكمل") {
+            Button("Resume") {
                     
                     resumeAfterPause() // هنا تحطون فنكشن الاستئناف
 
@@ -94,7 +94,7 @@ struct Saee: View {
                 .background(Color.greeno)
                 .clipShape(RoundedRectangle(cornerRadius: 20))
             } else if showStartButton {
-                Button("ابــــدأ") {
+                Button("Start") {
                     
                     startTimer()
                     //هنا تحطون الفنكشن حق التراكنق

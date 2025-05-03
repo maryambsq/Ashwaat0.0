@@ -83,7 +83,7 @@ struct tawaf: View {
             // الزر أو التايمر
             if isTrackingPaused {
            
-            Button("أكمل") {
+            Button("Resume") {
                     
                     resumeAfterPause() // هنا تحطون فنكشن الاستئناف
 
@@ -95,7 +95,7 @@ struct tawaf: View {
                 .background(Color.greeno)
                 .clipShape(RoundedRectangle(cornerRadius: 20))
             } else if showStartButton {
-                Button("ابــــدأ") {
+                Button("Start") {
                     
                     startTimer()
                     //هنا تحطون الفنكشن حق التراكنق
