@@ -32,7 +32,7 @@ struct tawaf: View {
                 Button(action: {
                     // حالياً ما يسوي شيء
                 }) {
-                    Image(systemName: "chevron.left")
+                    Image(systemName: Locale.characterDirection(forLanguage: Locale.current.language.languageCode?.identifier ?? "") == .rightToLeft ? "chevron.right" : "chevron.left")
                         .font(.system(size: 40, weight: .medium))
                         .foregroundColor(.gray.opacity(0.5))
                         .padding(.trailing)
@@ -74,10 +74,10 @@ struct tawaf: View {
                     .id(circleID)
                     .animation(.easeInOut(duration: 1.0), value: progress)
 
-                Text("\(lapCount)")
+                Text(formattedEnglishNumber(lapCount))
                     .font(.system(size: 88, weight: .bold ,design: .rounded))
                     .foregroundColor(isTrackingPaused ? Color.stopgreeno : Color.greeno)
-            }
+            }.environment(\.layoutDirection, .leftToRight)
             Spacer()
 
             // الزر أو التايمر
@@ -160,6 +160,13 @@ struct tawaf: View {
             }
         }
     }
+    
+    func formattedEnglishNumber(_ number: Int) -> String {//هذي الفنكشن تخلي الارقام انقلش بكل اللغات لحد يشيلها
+        let formatter = NumberFormatter()
+        formatter.locale = Locale(identifier: "en_US")
+        return formatter.string(from: NSNumber(value: number)) ?? "\(number)"
+    }
+    
 
     func resumeAfterPause() {//وهذي الفنكشن حقت لو طلع اليوز من الموقع
         isTrackingPaused = false
