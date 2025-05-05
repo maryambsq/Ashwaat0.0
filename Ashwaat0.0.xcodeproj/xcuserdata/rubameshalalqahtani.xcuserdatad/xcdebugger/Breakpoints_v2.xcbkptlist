@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "36E32B25-59D0-41E8-8EE5-6A37ACF35072"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C48BDA47-D4D3-4BAA-A71D-94D50C315B71"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Ashwaat0.0/Ashwaat0_0App.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "sharedModelContainer"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "C48BDA47-D4D3-4BAA-A71D-94D50C315B71 - fa1d64c2779550e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftData.ModelContainer in variable initialization expression of Ashwaat0_0.Ashwaat0_0App.sharedModelContainer : SwiftData.ModelContainer"
+                  moduleName = "Ashwaat0.0.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rubameshalalqahtani/Documents/Ashwaat0/Ashwaat0.0/Ashwaat0_0App.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13">
+               </Location>
+               <Location
+                  uuid = "C48BDA47-D4D3-4BAA-A71D-94D50C315B71 - 26ebd2f174da6572"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Ashwaat0_0.Ashwaat0_0App.init() -&gt; Ashwaat0_0.Ashwaat0_0App"
+                  moduleName = "Ashwaat0.0.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rubameshalalqahtani/Documents/Ashwaat0/Ashwaat0.0/Ashwaat0_0App.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13">
+               </Location>
+               <Location
+                  uuid = "C48BDA47-D4D3-4BAA-A71D-94D50C315B71 - 7ddf082f1a0ab0ea"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "default argument 0 of Ashwaat0_0.Ashwaat0_0App.init(sharedModelContainer: SwiftData.ModelContainer) -&gt; Ashwaat0_0.Ashwaat0_0App"
+                  moduleName = "Ashwaat0.0.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rubameshalalqahtani/Documents/Ashwaat0/Ashwaat0.0/Ashwaat0_0App.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
