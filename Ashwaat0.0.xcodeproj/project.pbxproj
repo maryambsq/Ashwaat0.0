@@ -6,10 +6,6 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		32443E792DC1ECD40095AA26 /* info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 32443E782DC1ECD40095AA26 /* info.plist */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXContainerItemProxy section */
 		324C59612DC0A5AB005E8390 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -28,7 +24,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		32443E782DC1ECD40095AA26 /* info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = info.plist; sourceTree = "<group>"; };
 		324C594E2DC0A5AA005E8390 /* Ashwaat0.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ashwaat0.0.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		324C59602DC0A5AB005E8390 /* Ashwaat0.0Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Ashwaat0.0Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		324C596A2DC0A5AB005E8390 /* Ashwaat0.0UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Ashwaat0.0UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,7 +75,6 @@
 		324C59452DC0A5AA005E8390 = {
 			isa = PBXGroup;
 			children = (
-				32443E782DC1ECD40095AA26 /* info.plist */,
 				324C59502DC0A5AA005E8390 /* Ashwaat0.0 */,
 				324C59632DC0A5AB005E8390 /* Ashwaat0.0Tests */,
 				324C596D2DC0A5AB005E8390 /* Ashwaat0.0UITests */,
@@ -218,7 +212,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32443E792DC1ECD40095AA26 /* info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,10 +396,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Ashwaat0.0/Preview Content\"";
-				DEVELOPMENT_TEAM = WVVL9YZMLF;
+				DEVELOPMENT_TEAM = Q2HD9U6B32;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Ashwaat0-0-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -433,10 +425,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Ashwaat0.0/Preview Content\"";
-				DEVELOPMENT_TEAM = WVVL9YZMLF;
+				DEVELOPMENT_TEAM = Q2HD9U6B32;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Ashwaat0-0-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
