@@ -19,10 +19,10 @@ struct TawafMain: View {
                     Image("Deco")
                         .ignoresSafeArea()
                         .position(x: geometry.size.width - 40, y: 0)
-
+                        .environment(\.layoutDirection, .leftToRight)
                     Image("Deco2")
                         .position(x: 40, y: geometry.size.height - 20)
-
+                        .environment(\.layoutDirection, .leftToRight)
                     VStack(spacing: 20) {
                        
                         Text("Tawaf")
@@ -42,23 +42,14 @@ struct TawafMain: View {
 
                             
                             VStack(spacing: 5) {
-                                Text("Let’s begin")
+                                Text("Let’s begin counting your Ashwaat!")
                                     .font(.largeTitle)
                                     .fontWeight(.heavy)
                                     .foregroundColor(.white)
                                     .multilineTextAlignment(.center)
+                                    .padding(.horizontal, 60)
 
-                                Text("counting your")
-                                    .font(.largeTitle)
-                                    .fontWeight(.heavy)
-                                    .foregroundColor(.white)
-                                    .multilineTextAlignment(.center)
-
-                                Text("Ashwaat!")
-                                    .font(.largeTitle)
-                                    .fontWeight(.heavy)
-                                    .foregroundColor(.white)
-                                    .multilineTextAlignment(.center)
+                              
                             }
                             .offset(y: -8)
                         }

@@ -18,10 +18,10 @@ struct Summary: View {
                     Image("Deco3")
                         .ignoresSafeArea()
                         .position(x: geometry.size.width - 100, y: 0)
-
+                        .environment(\.layoutDirection, .leftToRight)
                     Image("Deco2")
                         .position(x: 40, y: geometry.size.height - 20)
-
+                        .environment(\.layoutDirection, .leftToRight)
                     VStack(spacing: 20) {
                         Spacer()
 
@@ -34,13 +34,14 @@ struct Summary: View {
                                 .offset(y: 40)
 
                             Text("May God accept your good deeds.")
-                                .font(.title)
+                                .font(.largeTitle)
                                 .fontWeight(.semibold)
                                 .foregroundColor(Color("AccentColor"))
                                 .multilineTextAlignment(.center)
                                 .frame(maxWidth: .infinity)
                                 .padding(.top, -120)
                                 .alignmentGuide(.top) { d in d[.top] }
+                                .padding(.horizontal, 60)
 
                             VStack(spacing: 15) {
 
