@@ -38,7 +38,8 @@
             "value" : "Add Item"
           }
         }
-      }
+      },
+      "shouldTranslate" : false
     },
     "Allow location" : {
       "extractionState" : "manual",
@@ -105,9 +106,26 @@
             "state" : "translated",
             "value" : "أشـواطك"
           }
+        },
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اشواط"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ashwaat!"
+          }
+        },
+        "ur" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اشواط"
+          }
         }
-      },
-      "shouldTranslate" : false
+      }
     },
     "counting your" : {
       "localizations" : {
@@ -117,10 +135,22 @@
             "value" : " عد "
           }
         },
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "شمارش شما"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "à compter vos"
+          }
+        },
+        "ur" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "آپ کے  گننا "
           }
         }
       }
@@ -162,10 +192,22 @@
             "value" : "والخشوع يمتدّ"
           }
         },
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تمرکز حفظ شده است"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "concentration maintenue"
+          }
+        },
+        "ur" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : " توجہ برقرار ہے"
           }
         }
       }
@@ -207,7 +249,8 @@
             "value" : "Item at %@"
           }
         }
-      }
+      },
+      "shouldTranslate" : false
     },
     "Laps tracked" : {
       "localizations" : {
@@ -217,10 +260,22 @@
             "value" : "الأشواط تُعدّ،"
           }
         },
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "دورها ثبت شده‌اند،"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tours suivis,"
+          }
+        },
+        "ur" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "چکر ریکارڈ ہو گئے،"
           }
         }
       }
@@ -262,10 +317,22 @@
             "value" : "لنبدأ في "
           }
         },
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "بیایید شروع كنيم"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Commençons"
+          }
+        },
+        "ur" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "آئیے شروع کریں"
           }
         }
       }
@@ -393,10 +460,22 @@
             "value" : "الســــعي"
           }
         },
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الســــعى"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sa’i"
+          }
+        },
+        "ur" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ســــعي"
           }
         }
       }
@@ -437,7 +516,8 @@
             "value" : "Select an item"
           }
         }
-      }
+      },
+      "shouldTranslate" : false
     },
     "Start" : {
       "localizations" : {
@@ -590,10 +670,22 @@
             "value" : "لقد قضيت دقيقة"
           }
         },
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "شما ‌دقیقه صرف کردید"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "vous avez passé min"
+          }
+        },
+        "ur" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "آپ نے  منٹ صرف کیے\n"
           }
         }
       }
@@ -635,10 +727,22 @@
             "value" : "قطعت خطوة"
           }
         },
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "شما قدم برداشتید"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "vous avez fait pas"
+          }
+        },
+        "ur" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "آپ نے  قدم اٹھائے"
           }
         }
       }

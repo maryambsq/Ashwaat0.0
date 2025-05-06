@@ -19,9 +19,11 @@ struct WrongLocation: View {
                     Image("Deco")
                         .ignoresSafeArea()
                         .position(x: geometry.size.width - 40, y: 0)
+                        .environment(\.layoutDirection, .leftToRight)
 
                     Image("Deco2")
                         .position(x: 40, y: geometry.size.height - 20)
+                        .environment(\.layoutDirection, .leftToRight)
 
                     VStack(spacing: 20) {
                        
