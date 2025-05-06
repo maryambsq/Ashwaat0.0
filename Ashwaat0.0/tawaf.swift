@@ -28,8 +28,8 @@ struct tawaf: View {
                     Spacer()
                     Spacer()
 
-                    // ✅ NavigationLink للرجوع إلى الصفحة الرئيسية
-                    NavigationLink(destination: HomeView(), isActive: $backToHome) {
+                    // ✅ NavigationLink مخفي للرجوع إلى الصفحة الرئيسية
+                    NavigationLink(destination: TawafMain(), isActive: $backToHome) {
                         EmptyView()
                     }
 
@@ -64,7 +64,7 @@ struct tawaf: View {
                 Spacer()
 
                 // ✅ NavigationLink عند نهاية الطواف
-                NavigationLink(destination: FinishPage(), isActive: $navigateToNext) {
+                NavigationLink(destination: Summary(), isActive: $navigateToNext) {
                     EmptyView()
                 }
 
@@ -94,7 +94,7 @@ struct tawaf: View {
                         resumeAfterPause()
                     }
                     .font(.title.bold())
-                    .foregroundColor(.buttonText)
+                    .foregroundColor(.white)
                     .padding(.horizontal, 60)
                     .padding(.vertical, 10)
                     .background(Color.greeno)
@@ -104,7 +104,7 @@ struct tawaf: View {
                         startTimer()
                     }
                     .font(.title.bold())
-                    .foregroundColor(.buttonText)
+                    .foregroundColor(.white)
                     .padding(.horizontal, 60)
                     .padding(.vertical, 10)
                     .background(Color.greeno)
@@ -128,6 +128,7 @@ struct tawaf: View {
             .onDisappear {
                 timer?.invalidate()
             }
+            .navigationBarBackButtonHidden(true) // Hide the back button for this view
         }
     }
 
@@ -154,7 +155,7 @@ struct tawaf: View {
 
                     if lapCount == 7 {
                         timer?.invalidate()
-                        navigateToNext = true
+                        navigateToNext = true // ✅ الانتقال التلقائي
                     }
                 }
             }
@@ -179,25 +180,7 @@ struct tawaf: View {
     }
 }
 
-// صفحة النهاية للتجربة
-struct FinishPage: View {
-    var body: some View {
-        Text("انتهيت من الطواف 🎉")
-            .font(.largeTitle.bold())
-            .foregroundColor(.green)
-            .navigationBarBackButtonHidden(true)
-    }
-}
-
-// صفحة رئيسية للتجربة (ضيفيها حسب تطبيقك)
-struct HomeView: View {
-    var body: some View {
-        Text("الصفحة الرئيسية")
-            .font(.largeTitle.bold())
-            .foregroundColor(.blue)
-            .navigationBarBackButtonHidden(true)
-    }
-}
 #Preview {
     tawaf()
 }
+

@@ -17,7 +17,6 @@ struct Saee: View {
     @State private var circleID = UUID()
     
     @State private var navigateToNext = false // ✅ التنقل للنهاية
-    @State private var backToHome = false     // ✅ الرجوع للصفحة الرئيسية
 
     var body: some View {
         NavigationStack {
@@ -29,13 +28,13 @@ struct Saee: View {
                     Spacer()
                     
                     // ✅ NavigationLink مخفي للرجوع إلى Home
-                    NavigationLink(destination: HomeView1(), isActive: $backToHome) {
+                    NavigationLink(destination: Sa_iMain(), isActive: $navigateToNext) {
                         EmptyView()
                     }
 
-                    // ✅ زر السهم يرجع للصفحة الرئيسية
+                    // ✅ زر السهم لتفعيل الرجوع
                     Button(action: {
-                        backToHome = true
+                        navigateToNext = true
                     }) {
                         Image(systemName: Locale.characterDirection(forLanguage: Locale.current.language.languageCode?.identifier ?? "") == .rightToLeft ? "chevron.right" : "chevron.left")
                             .font(.system(size: 40, weight: .medium))
@@ -66,7 +65,7 @@ struct Saee: View {
                 Spacer()
 
                 // ✅ NavigationLink للانتقال التلقائي بعد آخر شوط
-                NavigationLink(destination: FinishPage1(), isActive: $navigateToNext) {
+                NavigationLink(destination: Summary(), isActive: $navigateToNext) {
                     EmptyView()
                 }
 
@@ -131,7 +130,7 @@ struct Saee: View {
             .onDisappear {
                 timer?.invalidate()
             }
-           
+            .navigationBarBackButtonHidden(true) // Hide the back button for this view
         }
     }
 
@@ -187,24 +186,5 @@ struct Saee: View {
     Saee()
 }
 
-// ✅ صفحة النهاية المؤقتة (تقدرين تغيرينها لاحقًا)
-struct FinishPage1: View {
-    var body: some View {
-        Text("انتهيت من السعي 🎉")
-            .font(.largeTitle.bold())
-            .foregroundColor(.green)
-            .navigationBarBackButtonHidden(true)
-    }
-}
 
-// ✅ الصفحة الرئيسية التجريبية
-struct HomeView1: View {
-    var body: some View {
-    
-            Text("الصفحة الرئيسية")
-                .font(.largeTitle.bold())
-                .foregroundColor(.blue)
-                .navigationBarBackButtonHidden(true)
-                 
-    }
-}
+
