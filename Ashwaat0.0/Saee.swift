@@ -13,132 +13,135 @@ struct Saee: View {
     @State private var isTrackingPaused = false
     @State private var showStartButton = true
 
-    // للتحكم بالحركة
     @State private var progress: CGFloat = 0
     @State private var circleID = UUID()
+    
+    @State private var navigateToNext = false // ✅ التنقل للنهاية
 
     var body: some View {
-        VStack(spacing: 40) {
-            // العنوان والسهم
-            Spacer()
-           
-
-            HStack {
+        NavigationStack {
+            VStack(spacing: 40) {
+                Spacer()
                 
-                Spacer()
-                Spacer()
-               
-                Button(action: {
-                    // حالياً ما يسوي شيء
-                }) {
-                    Image(systemName: "chevron.left")
-                        .font(.system(size: 40, weight: .medium))
-                        .foregroundColor(.gray.opacity(0.5))
-                        .padding(.trailing)
-                }
-                
-                Spacer()
-                Spacer()
-                Spacer()
-                Spacer()
-
-                Text("Sa’i")
-                    .font(.system(size: 33, weight: .bold, design: .rounded))                    .foregroundColor(.greeno)
-                    .padding(.trailing, 10)
-              
-                Spacer()
-                Spacer()
-                Spacer()
-                Spacer()
-                Spacer()
-                Spacer()
-                Spacer()
-                Spacer()
-
-            }
-            Spacer()
-
-            // العداد الدائري
-            ZStack {
-              
-                Circle()
-                    .stroke(Color.circlecolor, lineWidth: 40)
-                    .frame(width: 300, height: 300)
-
-                Circle()
-                    .trim(from: 0, to: progress)
-                    .stroke(isTrackingPaused ? Color.stopgreeno : Color.greeno, style: StrokeStyle(lineWidth: 40, lineCap: .round))
-                    .rotationEffect(.degrees(-90))
-                    .frame(width: 300, height: 300)
-                    .id(circleID)
-                    .animation(.easeInOut(duration: 1.0), value: progress)
-
-                Text("\(lapCount)")
-                    .font(.system(size: 88, weight: .bold ,design: .rounded))
-                    .foregroundColor(isTrackingPaused ? Color.stopgreeno : Color.greeno)
-            }
-            Spacer()
-
-            // الزر أو التايمر
-            if isTrackingPaused {
-           
-            Button("Resume") {
+                HStack {
+                    Spacer()
+                    Spacer()
                     
-                    resumeAfterPause() // هنا تحطون فنكشن الاستئناف
+                    // ✅ NavigationLink مخفي للرجوع إلى Home
+                    NavigationLink(destination: Sa_iMain(), isActive: $navigateToNext) {
+                        EmptyView()
+                    }
 
-                }
-                .font(.title.bold())
-                .foregroundColor(.buttonText)
-                .padding(.horizontal, 60)
-                .padding(.vertical, 10)
-                .background(Color.greeno)
-                .clipShape(RoundedRectangle(cornerRadius: 20))
-            } else if showStartButton {
-                Button("Start") {
+                    // ✅ زر السهم لتفعيل الرجوع
+                    Button(action: {
+                        navigateToNext = true
+                    }) {
+                        Image(systemName: Locale.characterDirection(forLanguage: Locale.current.language.languageCode?.identifier ?? "") == .rightToLeft ? "chevron.right" : "chevron.left")
+                            .font(.system(size: 40, weight: .medium))
+                            .foregroundColor(.gray.opacity(0.5))
+                            .padding(.trailing)
+                    }
                     
-                    startTimer()
-                    //هنا تحطون الفنكشن حق التراكنق
+                    Spacer()
+                    Spacer()
+                    Spacer()
+                    Spacer()
+                    
+                    Text("Sa’i")
+                        .font(.system(size: 33, weight: .bold, design: .rounded))
+                        .foregroundColor(.greeno)
+                        .padding(.trailing, 10)
+                    
+                    Spacer()
+                    Spacer()
+                    Spacer()
+                    Spacer()
+                    Spacer()
+                    Spacer()
+                    Spacer()
+                    Spacer()
                 }
-                .font(.title.bold())
-                .foregroundColor(.buttonText)
-                .padding(.horizontal, 60)
-                .padding(.vertical, 10)
-                .background(Color.greeno)
-                .clipShape(RoundedRectangle(cornerRadius: 20))
-            } else {
-                Text(formattedTime)
+
+                Spacer()
+
+                // ✅ NavigationLink للانتقال التلقائي بعد آخر شوط
+                NavigationLink(destination: Summary(), isActive: $navigateToNext) {
+                    EmptyView()
+                }
+
+                ZStack {
+                    Circle()
+                        .stroke(Color.circlecolor, lineWidth: 40)
+                        .frame(width: 300, height: 300)
+
+                    Circle()
+                        .trim(from: 0, to: progress)
+                        .stroke(isTrackingPaused ? Color.stopgreeno : Color.greeno, style: StrokeStyle(lineWidth: 40, lineCap: .round))
+                        .rotationEffect(.degrees(-90))
+                        .frame(width: 300, height: 300)
+                        .id(circleID)
+                        .animation(.easeInOut(duration: 1.0), value: progress)
+
+                    Text(formattedEnglishNumber(lapCount))
+                        .font(.system(size: 88, weight: .bold ,design: .rounded))
+                        .foregroundColor(isTrackingPaused ? Color.stopgreeno : Color.greeno)
+                }
+                .environment(\.layoutDirection, .leftToRight)
+
+                Spacer()
+
+                if isTrackingPaused {
+                    Button("Resume") {
+                        resumeAfterPause()
+                    }
                     .font(.title.bold())
-                    .padding(.horizontal, 40)
+                    .foregroundColor(.buttonText)
+                    .padding(.horizontal, 60)
                     .padding(.vertical, 10)
-                    .background(Color.circlecolor)
+                    .background(Color.greeno)
                     .clipShape(RoundedRectangle(cornerRadius: 20))
-                    .foregroundColor(Color.lightgreeno)
+                } else if showStartButton {
+                    Button("Start") {
+                        startTimer()
+                    }
+                    .font(.title.bold())
+                    .foregroundColor(.buttonText)
+                    .padding(.horizontal, 60)
+                    .padding(.vertical, 10)
+                    .background(Color.greeno)
+                    .clipShape(RoundedRectangle(cornerRadius: 20))
+                } else {
+                    Text(formattedTime)
+                        .font(.title.bold())
+                        .padding(.horizontal, 40)
+                        .padding(.vertical, 10)
+                        .background(Color.circlecolor)
+                        .clipShape(RoundedRectangle(cornerRadius: 20))
+                        .foregroundColor(Color.lightgreeno)
+                }
+
+                Spacer()
+                Spacer()
             }
-            Spacer()
-            Spacer()
-
-        }
-      
-
-        .background(Color.BG)
-        .frame(maxWidth: .infinity, maxHeight: .infinity) // ← هذا اللي يخلي الخلفية تغطي كامل الشاشة
+            .background(Color.BG)
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
             .ignoresSafeArea()
-      
-
-       
-        .onDisappear {
-            timer?.invalidate()
+            
+            .onDisappear {
+                timer?.invalidate()
+            }
+            .navigationBarBackButtonHidden(true) // Hide the back button for this view
         }
     }
 
-    func startTimer() {//هذي الفنكشن حقت التست الي بتحطون التراكنق
+    func startTimer() {
         showStartButton = false
         timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { _ in
             timeElapsed += 1
 
             if timeElapsed % 2 == 0 && lapCount < 7 {
                 progress = 0
-                circleID = UUID() // ✅ توليد معرف جديد = إعادة بناء الحلقة
+                circleID = UUID()
 
                 withAnimation(.easeInOut(duration: 1.0)) {
                     progress = 1
@@ -154,15 +157,22 @@ struct Saee: View {
 
                     if lapCount == 7 {
                         timer?.invalidate()
+                        navigateToNext = true // ✅ الانتقال التلقائي
                     }
                 }
             }
         }
     }
 
-    func resumeAfterPause() {//وهذي الفنكشن حقت لو طلع اليوز من الموقع
+    func resumeAfterPause() {
         isTrackingPaused = false
         startTimer()
+    }
+
+    func formattedEnglishNumber(_ number: Int) -> String {
+        let formatter = NumberFormatter()
+        formatter.locale = Locale(identifier: "en_US")
+        return formatter.string(from: NSNumber(value: number)) ?? "\(number)"
     }
 
     var formattedTime: String {
@@ -175,3 +185,6 @@ struct Saee: View {
 #Preview {
     Saee()
 }
+
+
+
