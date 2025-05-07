@@ -59,7 +59,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Autoriser la localisation"
+            "value" : "Autorisez la localisation"
           }
         },
         "ur" : {
@@ -88,7 +88,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Autoriser l’accès à la localisation"
+            "value" : "Autorisez l’accès à la localisation"
           }
         },
         "ur" : {
@@ -173,7 +173,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Terminé"
+            "value" : "Terminez"
           }
         },
         "ur" : {
