@@ -43,48 +43,51 @@ struct Summary: View {
                                 .alignmentGuide(.top) { d in d[.top] }
                                 .padding(.horizontal, 60)
 
-                            VStack(spacing: 15) {
+                            HStack {
+                                Spacer() // Pushes content to the center
 
-                                HStack {
-                                    Image("TimerL")
-                                        .resizable()
-                                        .scaledToFit()
-                                        .frame(width: 40, height: 40)
-                                        .padding(.leading, -20)
+                                VStack(alignment: .leading, spacing: 15) {
+                                    HStack(spacing: 10) {
+                                        Image("TimerL")
+                                            .resizable()
+                                            .scaledToFit()
+                                            .frame(width: 40, height: 40)
+                                        Text("you spent 40 min")
+                                            .foregroundColor(Color("AccentColor"))
+                                            .font(.body)
+                                            .fontWeight(.bold)
+                                    }
 
-                                    Text("you spent 40 min")
-                                        .foregroundColor(Color("AccentColor"))
-                                        .font(.body)
-                                        .fontWeight(.bold)
-                                        .padding(.leading, 10)
+                                    HStack(spacing: 10) {
+                                        Image("StaircaseL")
+                                            .resizable()
+                                            .scaledToFit()
+                                            .frame(width: 40, height: 40)
+                                        Text("you took 4000 steps")
+                                            .foregroundColor(Color("AccentColor"))
+                                            .font(.body)
+                                            .fontWeight(.bold)
+                                    }
+
+                                    HStack(spacing: 10) {
+                                        Image("QuranL")
+                                            .resizable()
+                                            .scaledToFit()
+                                            .frame(width: 40, height: 40)
+                                        Text("you completed Tawaf")
+                                            .foregroundColor(Color("AccentColor"))
+                                            .font(.body)
+                                            .fontWeight(.bold)
+                                    }
                                 }
+                                
 
-                                HStack {
-                                    Image("StaircaseL")
-                                        .resizable()
-                                        .scaledToFit()
-                                        .frame(width: 40, height: 40)
-
-                                    Text("you took 4000 steps")
-                                        .foregroundColor(Color("AccentColor"))
-                                        .font(.body)
-                                        .fontWeight(.bold)
-                                        .padding(.leading, 10)
-                                }
-
-                                HStack {
-                                    Image("QuranL")
-                                        .resizable()
-                                        .scaledToFit()
-                                        .frame(width: 40, height: 40)
-
-                                    Text("you completed tawaf")
-                                        .foregroundColor(Color("AccentColor"))
-                                        .font(.body)
-                                        .fontWeight(.bold)
-                                        .padding(.leading, 10)
-                                }
+                                Spacer() // Pushes from the other side
                             }
+
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                            //.environment(\.layoutDirection, .leftToRight) // Optional: to avoid RTL flipping
+
                             .offset(x: -20, y: 80)
                         }
 
