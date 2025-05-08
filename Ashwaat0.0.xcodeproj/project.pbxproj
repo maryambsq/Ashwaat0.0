@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		68D616C52DCB551200871C09 /* WatchAshwaatTracker Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 68D616A22DCB551100871C09 /* WatchAshwaatTracker Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		324C59612DC0A5AB005E8390 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -21,12 +25,50 @@
 			remoteGlobalIDString = 324C594D2DC0A5AA005E8390;
 			remoteInfo = Ashwaat0.0;
 		};
+		68D616B22DCB551200871C09 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 324C59462DC0A5AA005E8390 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 68D616A12DCB551100871C09;
+			remoteInfo = "WatchAshwaatTracker Watch App";
+		};
+		68D616BC2DCB551200871C09 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 324C59462DC0A5AA005E8390 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 68D616A12DCB551100871C09;
+			remoteInfo = "WatchAshwaatTracker Watch App";
+		};
+		68D616C32DCB551200871C09 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 324C59462DC0A5AA005E8390 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 68D616A12DCB551100871C09;
+			remoteInfo = "WatchAshwaatTracker Watch App";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		68D616C62DCB551200871C09 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				68D616C52DCB551200871C09 /* WatchAshwaatTracker Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		324C594E2DC0A5AA005E8390 /* Ashwaat0.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ashwaat0.0.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		324C59602DC0A5AB005E8390 /* Ashwaat0.0Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Ashwaat0.0Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		324C596A2DC0A5AB005E8390 /* Ashwaat0.0UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Ashwaat0.0UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		68D616A22DCB551100871C09 /* WatchAshwaatTracker Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WatchAshwaatTracker Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		68D616B12DCB551200871C09 /* WatchAshwaatTracker Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WatchAshwaatTracker Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		68D616BB2DCB551200871C09 /* WatchAshwaatTracker Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WatchAshwaatTracker Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -43,6 +85,21 @@
 		324C596D2DC0A5AB005E8390 /* Ashwaat0.0UITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = Ashwaat0.0UITests;
+			sourceTree = "<group>";
+		};
+		68D616A32DCB551100871C09 /* WatchAshwaatTracker Watch App */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "WatchAshwaatTracker Watch App";
+			sourceTree = "<group>";
+		};
+		68D616B42DCB551200871C09 /* WatchAshwaatTracker Watch AppTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "WatchAshwaatTracker Watch AppTests";
+			sourceTree = "<group>";
+		};
+		68D616BE2DCB551200871C09 /* WatchAshwaatTracker Watch AppUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "WatchAshwaatTracker Watch AppUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -69,6 +126,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		68D6169F2DCB551100871C09 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68D616AE2DCB551200871C09 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68D616B82DCB551200871C09 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -78,6 +156,9 @@
 				324C59502DC0A5AA005E8390 /* Ashwaat0.0 */,
 				324C59632DC0A5AB005E8390 /* Ashwaat0.0Tests */,
 				324C596D2DC0A5AB005E8390 /* Ashwaat0.0UITests */,
+				68D616A32DCB551100871C09 /* WatchAshwaatTracker Watch App */,
+				68D616B42DCB551200871C09 /* WatchAshwaatTracker Watch AppTests */,
+				68D616BE2DCB551200871C09 /* WatchAshwaatTracker Watch AppUITests */,
 				324C594F2DC0A5AA005E8390 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,6 +169,9 @@
 				324C594E2DC0A5AA005E8390 /* Ashwaat0.0.app */,
 				324C59602DC0A5AB005E8390 /* Ashwaat0.0Tests.xctest */,
 				324C596A2DC0A5AB005E8390 /* Ashwaat0.0UITests.xctest */,
+				68D616A22DCB551100871C09 /* WatchAshwaatTracker Watch App.app */,
+				68D616B12DCB551200871C09 /* WatchAshwaatTracker Watch AppTests.xctest */,
+				68D616BB2DCB551200871C09 /* WatchAshwaatTracker Watch AppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -102,10 +186,12 @@
 				324C594A2DC0A5AA005E8390 /* Sources */,
 				324C594B2DC0A5AA005E8390 /* Frameworks */,
 				324C594C2DC0A5AA005E8390 /* Resources */,
+				68D616C62DCB551200871C09 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				68D616C42DCB551200871C09 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				324C59502DC0A5AA005E8390 /* Ashwaat0.0 */,
@@ -163,6 +249,74 @@
 			productReference = 324C596A2DC0A5AB005E8390 /* Ashwaat0.0UITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		68D616A12DCB551100871C09 /* WatchAshwaatTracker Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68D616CD2DCB551200871C09 /* Build configuration list for PBXNativeTarget "WatchAshwaatTracker Watch App" */;
+			buildPhases = (
+				68D6169E2DCB551100871C09 /* Sources */,
+				68D6169F2DCB551100871C09 /* Frameworks */,
+				68D616A02DCB551100871C09 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				68D616A32DCB551100871C09 /* WatchAshwaatTracker Watch App */,
+			);
+			name = "WatchAshwaatTracker Watch App";
+			packageProductDependencies = (
+			);
+			productName = "WatchAshwaatTracker Watch App";
+			productReference = 68D616A22DCB551100871C09 /* WatchAshwaatTracker Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		68D616B02DCB551200871C09 /* WatchAshwaatTracker Watch AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68D616CE2DCB551200871C09 /* Build configuration list for PBXNativeTarget "WatchAshwaatTracker Watch AppTests" */;
+			buildPhases = (
+				68D616AD2DCB551200871C09 /* Sources */,
+				68D616AE2DCB551200871C09 /* Frameworks */,
+				68D616AF2DCB551200871C09 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				68D616B32DCB551200871C09 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				68D616B42DCB551200871C09 /* WatchAshwaatTracker Watch AppTests */,
+			);
+			name = "WatchAshwaatTracker Watch AppTests";
+			packageProductDependencies = (
+			);
+			productName = "WatchAshwaatTracker Watch AppTests";
+			productReference = 68D616B12DCB551200871C09 /* WatchAshwaatTracker Watch AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		68D616BA2DCB551200871C09 /* WatchAshwaatTracker Watch AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68D616CF2DCB551200871C09 /* Build configuration list for PBXNativeTarget "WatchAshwaatTracker Watch AppUITests" */;
+			buildPhases = (
+				68D616B72DCB551200871C09 /* Sources */,
+				68D616B82DCB551200871C09 /* Frameworks */,
+				68D616B92DCB551200871C09 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				68D616BD2DCB551200871C09 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				68D616BE2DCB551200871C09 /* WatchAshwaatTracker Watch AppUITests */,
+			);
+			name = "WatchAshwaatTracker Watch AppUITests";
+			packageProductDependencies = (
+			);
+			productName = "WatchAshwaatTracker Watch AppUITests";
+			productReference = 68D616BB2DCB551200871C09 /* WatchAshwaatTracker Watch AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -184,6 +338,17 @@
 						CreatedOnToolsVersion = 16.2;
 						TestTargetID = 324C594D2DC0A5AA005E8390;
 					};
+					68D616A12DCB551100871C09 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					68D616B02DCB551200871C09 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 68D616A12DCB551100871C09;
+					};
+					68D616BA2DCB551200871C09 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 68D616A12DCB551100871C09;
+					};
 				};
 			};
 			buildConfigurationList = 324C59492DC0A5AA005E8390 /* Build configuration list for PBXProject "Ashwaat0.0" */;
@@ -203,6 +368,9 @@
 				324C594D2DC0A5AA005E8390 /* Ashwaat0.0 */,
 				324C595F2DC0A5AB005E8390 /* Ashwaat0.0Tests */,
 				324C59692DC0A5AB005E8390 /* Ashwaat0.0UITests */,
+				68D616A12DCB551100871C09 /* WatchAshwaatTracker Watch App */,
+				68D616B02DCB551200871C09 /* WatchAshwaatTracker Watch AppTests */,
+				68D616BA2DCB551200871C09 /* WatchAshwaatTracker Watch AppUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -223,6 +391,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		324C59682DC0A5AB005E8390 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68D616A02DCB551100871C09 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68D616AF2DCB551200871C09 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68D616B92DCB551200871C09 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -253,6 +442,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		68D6169E2DCB551100871C09 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68D616AD2DCB551200871C09 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68D616B72DCB551200871C09 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -265,6 +475,21 @@
 			isa = PBXTargetDependency;
 			target = 324C594D2DC0A5AA005E8390 /* Ashwaat0.0 */;
 			targetProxy = 324C596B2DC0A5AB005E8390 /* PBXContainerItemProxy */;
+		};
+		68D616B32DCB551200871C09 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 68D616A12DCB551100871C09 /* WatchAshwaatTracker Watch App */;
+			targetProxy = 68D616B22DCB551200871C09 /* PBXContainerItemProxy */;
+		};
+		68D616BD2DCB551200871C09 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 68D616A12DCB551100871C09 /* WatchAshwaatTracker Watch App */;
+			targetProxy = 68D616BC2DCB551200871C09 /* PBXContainerItemProxy */;
+		};
+		68D616C42DCB551200871C09 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 68D616A12DCB551100871C09 /* WatchAshwaatTracker Watch App */;
+			targetProxy = 68D616C32DCB551200871C09 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -518,6 +743,144 @@
 			};
 			name = Release;
 		};
+		68D616C72DCB551200871C09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WatchAshwaatTracker Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = WVVL9YZMLF;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = WatchAshwaatTracker;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "Maryam.Ashwaat0-0";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Maryam.Ashwaat0-0.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 11.2;
+			};
+			name = Debug;
+		};
+		68D616C82DCB551200871C09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WatchAshwaatTracker Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = WVVL9YZMLF;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = WatchAshwaatTracker;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "Maryam.Ashwaat0-0";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Maryam.Ashwaat0-0.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 11.2;
+			};
+			name = Release;
+		};
+		68D616C92DCB551200871C09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 59S9AH5LLK;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Aliah.WatchAshwaatTracker-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WatchAshwaatTracker Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WatchAshwaatTracker Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 11.2;
+			};
+			name = Debug;
+		};
+		68D616CA2DCB551200871C09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 59S9AH5LLK;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Aliah.WatchAshwaatTracker-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WatchAshwaatTracker Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WatchAshwaatTracker Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 11.2;
+			};
+			name = Release;
+		};
+		68D616CB2DCB551200871C09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 59S9AH5LLK;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Aliah.WatchAshwaatTracker-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "WatchAshwaatTracker Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 11.2;
+			};
+			name = Debug;
+		};
+		68D616CC2DCB551200871C09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 59S9AH5LLK;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Aliah.WatchAshwaatTracker-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "WatchAshwaatTracker Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 11.2;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -553,6 +916,33 @@
 			buildConfigurations = (
 				324C597B2DC0A5AB005E8390 /* Debug */,
 				324C597C2DC0A5AB005E8390 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68D616CD2DCB551200871C09 /* Build configuration list for PBXNativeTarget "WatchAshwaatTracker Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68D616C72DCB551200871C09 /* Debug */,
+				68D616C82DCB551200871C09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68D616CE2DCB551200871C09 /* Build configuration list for PBXNativeTarget "WatchAshwaatTracker Watch AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68D616C92DCB551200871C09 /* Debug */,
+				68D616CA2DCB551200871C09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68D616CF2DCB551200871C09 /* Build configuration list for PBXNativeTarget "WatchAshwaatTracker Watch AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68D616CB2DCB551200871C09 /* Debug */,
+				68D616CC2DCB551200871C09 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
