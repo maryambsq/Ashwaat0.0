@@ -22,6 +22,11 @@ struct Ashwaat0_0App: App {
             fatalError("Could not create ModelContainer: \(error)")
         }
     }()
+    
+    //  This to make sure the app asks for notification permission when it launches :)
+    init() {
+        NotificationManager.shared.requestAuthorization()
+    }
 
     var body: some Scene {
         WindowGroup {

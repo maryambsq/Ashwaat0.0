@@ -2,7 +2,7 @@
 //  TawafWidgetLiveActivityLiveActivity.swift
 //  TawafWidgetLiveActivity
 //
-//  Created by ALJOAHARAH SAUD ALSAYARI on 11/05/2025.
+//  Created by ALJOAHARAH SAUD ALSAYARI on 05/05/2025.
 //
 
 import ActivityKit

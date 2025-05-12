@@ -2,7 +2,7 @@
 //  TawafWidgetLiveActivityControl.swift
 //  TawafWidgetLiveActivity
 //
-//  Created by ALJOAHARAH SAUD ALSAYARI on 11/05/2025.
+//  Created by ALJOAHARAH SAUD ALSAYARI on 05/05/2025.
 //
 
 import AppIntents
@@ -10,7 +10,7 @@ import SwiftUI
 import WidgetKit
 
 struct TawafWidgetLiveActivityControl: ControlWidget {
-    static let kind: String = "Maryam.Ashwaat0-0.TawafWidgetLiveActivity"
+    static let kind: String = "asa.Ashwaat00-00.TawafWidgetLiveActivity"
 
     var body: some ControlWidgetConfiguration {
         AppIntentControlConfiguration(

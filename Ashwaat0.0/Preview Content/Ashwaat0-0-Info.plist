@@ -6,5 +6,9 @@
 	<array>
 		<string>location</string>
 	</array>
+	<key>NSSupportsLiveActivities</key>
+	<true/>
+	<key>UlApplicationSupportsLiveActivities</key>
+	<true/>
 </dict>
 </plist>

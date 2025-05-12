@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		A54AF4102DCA099500E9BAB5 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = A54AF40F2DCA099500E9BAB5 /* Localizable.xcstrings */; };
+		AF9903682DD077EE00E8B37A /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF9903672DD077ED00E8B37A /* WidgetKit.framework */; };
+		AF99036A2DD077EE00E8B37A /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF9903692DD077EE00E8B37A /* SwiftUI.framework */; };
+		AF99037B2DD077EF00E8B37A /* TawafWidgetLiveActivityExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = AF9903652DD077ED00E8B37A /* TawafWidgetLiveActivityExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,18 +28,62 @@
 			remoteGlobalIDString = 324C594D2DC0A5AA005E8390;
 			remoteInfo = Ashwaat0.0;
 		};
+		AF9903792DD077EF00E8B37A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 324C59462DC0A5AA005E8390 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF9903642DD077ED00E8B37A;
+			remoteInfo = TawafWidgetLiveActivityExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AF9903802DD077EF00E8B37A /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				AF99037B2DD077EF00E8B37A /* TawafWidgetLiveActivityExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		324C594E2DC0A5AA005E8390 /* Ashwaat0.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ashwaat0.0.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		324C59602DC0A5AB005E8390 /* Ashwaat0.0Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Ashwaat0.0Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		324C596A2DC0A5AB005E8390 /* Ashwaat0.0UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Ashwaat0.0UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A54AF40F2DCA099500E9BAB5 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		AF9903652DD077ED00E8B37A /* TawafWidgetLiveActivityExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TawafWidgetLiveActivityExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF9903672DD077ED00E8B37A /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		AF9903692DD077EE00E8B37A /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		AF99037C2DD077EF00E8B37A /* Exceptions for "TawafWidgetLiveActivity" folder in "TawafWidgetLiveActivityExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = AF9903642DD077ED00E8B37A /* TawafWidgetLiveActivityExtension */;
+		};
+		AF99038D2DD07CC800E8B37A /* Exceptions for "Ashwaat0.0" folder in "TawafWidgetLiveActivityExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"Preview Content/TawafActivityAttributes.swift .swift",
+			);
+			target = AF9903642DD077ED00E8B37A /* TawafWidgetLiveActivityExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		324C59502DC0A5AA005E8390 /* Ashwaat0.0 */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				AF99038D2DD07CC800E8B37A /* Exceptions for "Ashwaat0.0" folder in "TawafWidgetLiveActivityExtension" target */,
+			);
 			path = Ashwaat0.0;
 			sourceTree = "<group>";
 		};
@@ -48,6 +95,14 @@
 		324C596D2DC0A5AB005E8390 /* Ashwaat0.0UITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = Ashwaat0.0UITests;
+			sourceTree = "<group>";
+		};
+		AF99036B2DD077EE00E8B37A /* TawafWidgetLiveActivity */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				AF99037C2DD077EF00E8B37A /* Exceptions for "TawafWidgetLiveActivity" folder in "TawafWidgetLiveActivityExtension" target */,
+			);
+			path = TawafWidgetLiveActivity;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -74,6 +129,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AF9903622DD077ED00E8B37A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF99036A2DD077EE00E8B37A /* SwiftUI.framework in Frameworks */,
+				AF9903682DD077EE00E8B37A /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -84,6 +148,8 @@
 				324C59502DC0A5AA005E8390 /* Ashwaat0.0 */,
 				324C59632DC0A5AB005E8390 /* Ashwaat0.0Tests */,
 				324C596D2DC0A5AB005E8390 /* Ashwaat0.0UITests */,
+				AF99036B2DD077EE00E8B37A /* TawafWidgetLiveActivity */,
+				AF9903662DD077ED00E8B37A /* Frameworks */,
 				324C594F2DC0A5AA005E8390 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -94,8 +160,18 @@
 				324C594E2DC0A5AA005E8390 /* Ashwaat0.0.app */,
 				324C59602DC0A5AB005E8390 /* Ashwaat0.0Tests.xctest */,
 				324C596A2DC0A5AB005E8390 /* Ashwaat0.0UITests.xctest */,
+				AF9903652DD077ED00E8B37A /* TawafWidgetLiveActivityExtension.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		AF9903662DD077ED00E8B37A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AF9903672DD077ED00E8B37A /* WidgetKit.framework */,
+				AF9903692DD077EE00E8B37A /* SwiftUI.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -108,10 +184,12 @@
 				324C594A2DC0A5AA005E8390 /* Sources */,
 				324C594B2DC0A5AA005E8390 /* Frameworks */,
 				324C594C2DC0A5AA005E8390 /* Resources */,
+				AF9903802DD077EF00E8B37A /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				AF99037A2DD077EF00E8B37A /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				324C59502DC0A5AA005E8390 /* Ashwaat0.0 */,
@@ -169,6 +247,28 @@
 			productReference = 324C596A2DC0A5AB005E8390 /* Ashwaat0.0UITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		AF9903642DD077ED00E8B37A /* TawafWidgetLiveActivityExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF99037D2DD077EF00E8B37A /* Build configuration list for PBXNativeTarget "TawafWidgetLiveActivityExtension" */;
+			buildPhases = (
+				AF9903612DD077ED00E8B37A /* Sources */,
+				AF9903622DD077ED00E8B37A /* Frameworks */,
+				AF9903632DD077ED00E8B37A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				AF99036B2DD077EE00E8B37A /* TawafWidgetLiveActivity */,
+			);
+			name = TawafWidgetLiveActivityExtension;
+			packageProductDependencies = (
+			);
+			productName = TawafWidgetLiveActivityExtension;
+			productReference = AF9903652DD077ED00E8B37A /* TawafWidgetLiveActivityExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -176,7 +276,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1620;
+				LastSwiftUpdateCheck = 1630;
 				LastUpgradeCheck = 1620;
 				TargetAttributes = {
 					324C594D2DC0A5AA005E8390 = {
@@ -189,6 +289,9 @@
 					324C59692DC0A5AB005E8390 = {
 						CreatedOnToolsVersion = 16.2;
 						TestTargetID = 324C594D2DC0A5AA005E8390;
+					};
+					AF9903642DD077ED00E8B37A = {
+						CreatedOnToolsVersion = 16.3;
 					};
 				};
 			};
@@ -209,6 +312,7 @@
 				324C594D2DC0A5AA005E8390 /* Ashwaat0.0 */,
 				324C595F2DC0A5AB005E8390 /* Ashwaat0.0Tests */,
 				324C59692DC0A5AB005E8390 /* Ashwaat0.0UITests */,
+				AF9903642DD077ED00E8B37A /* TawafWidgetLiveActivityExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -230,6 +334,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		324C59682DC0A5AB005E8390 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF9903632DD077ED00E8B37A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -260,6 +371,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AF9903612DD077ED00E8B37A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -272,6 +390,11 @@
 			isa = PBXTargetDependency;
 			target = 324C594D2DC0A5AA005E8390 /* Ashwaat0.0 */;
 			targetProxy = 324C596B2DC0A5AB005E8390 /* PBXContainerItemProxy */;
+		};
+		AF99037A2DD077EF00E8B37A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AF9903642DD077ED00E8B37A /* TawafWidgetLiveActivityExtension */;
+			targetProxy = AF9903792DD077EF00E8B37A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -400,12 +523,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Ashwaat0.0/Ashwaat0.0.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Ashwaat0.0/Preview Content\"";
 				DEVELOPMENT_TEAM = WVVL9YZMLF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -429,12 +554,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Ashwaat0.0/Ashwaat0.0.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Ashwaat0.0/Preview Content\"";
 				DEVELOPMENT_TEAM = WVVL9YZMLF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -525,6 +652,62 @@
 			};
 			name = Release;
 		};
+		AF99037E2DD077EF00E8B37A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WVVL9YZMLF;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TawafWidgetLiveActivity/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = TawafWidgetLiveActivity;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Maryam.Ashwaat0-0.TawafWidgetLiveActivity";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AF99037F2DD077EF00E8B37A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WVVL9YZMLF;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TawafWidgetLiveActivity/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = TawafWidgetLiveActivity;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Maryam.Ashwaat0-0.TawafWidgetLiveActivity";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -560,6 +743,15 @@
 			buildConfigurations = (
 				324C597B2DC0A5AB005E8390 /* Debug */,
 				324C597C2DC0A5AB005E8390 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF99037D2DD077EF00E8B37A /* Build configuration list for PBXNativeTarget "TawafWidgetLiveActivityExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF99037E2DD077EF00E8B37A /* Debug */,
+				AF99037F2DD077EF00E8B37A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
